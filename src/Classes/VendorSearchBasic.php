@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -89,6 +89,7 @@ class VendorSearchBasic extends SearchRecordBasic {
     public $state;
     public $subsidiary;
     public $taxIdNum;
+    public $timeApprover;
     public $title;
     public $unbilledOrders;
     public $url;
@@ -166,6 +167,7 @@ class VendorSearchBasic extends SearchRecordBasic {
         "state" => "SearchStringField",
         "subsidiary" => "SearchMultiSelectField",
         "taxIdNum" => "SearchStringField",
+        "timeApprover" => "SearchMultiSelectField",
         "title" => "SearchStringField",
         "unbilledOrders" => "SearchDoubleField",
         "url" => "SearchStringField",

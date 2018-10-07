@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -38,6 +38,8 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
     public $approver;
     public $attention;
     public $authWorkDate;
+    public $baseWage;
+    public $baseWageType;
     public $billAddress;
     public $billAddress1;
     public $billAddress2;
@@ -56,6 +58,7 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
     public $city;
     public $class;
     public $comments;
+    public $compensationCurrency;
     public $concurrentWebServicesUser;
     public $country;
     public $countryCode;
@@ -142,6 +145,10 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
     public $subscriptionStatus;
     public $subsidiary;
     public $supervisor;
+    public $terminationCategory;
+    public $terminationDetails;
+    public $terminationReason;
+    public $terminationRegretted;
     public $timeApprover;
     public $timeOffPlan;
     public $title;
@@ -172,6 +179,8 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "approver" => "SearchColumnSelectField[]",
         "attention" => "SearchColumnStringField[]",
         "authWorkDate" => "SearchColumnDateField[]",
+        "baseWage" => "SearchColumnDoubleField[]",
+        "baseWageType" => "SearchEnumMultiSelectField[]",
         "billAddress" => "SearchColumnStringField[]",
         "billAddress1" => "SearchColumnStringField[]",
         "billAddress2" => "SearchColumnStringField[]",
@@ -190,6 +199,7 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "city" => "SearchColumnStringField[]",
         "class" => "SearchColumnSelectField[]",
         "comments" => "SearchColumnStringField[]",
+        "compensationCurrency" => "SearchColumnEnumSelectField[]",
         "concurrentWebServicesUser" => "SearchColumnBooleanField[]",
         "country" => "SearchColumnEnumSelectField[]",
         "countryCode" => "SearchColumnStringField[]",
@@ -276,6 +286,10 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "subscriptionStatus" => "SearchColumnBooleanField[]",
         "subsidiary" => "SearchColumnSelectField[]",
         "supervisor" => "SearchColumnSelectField[]",
+        "terminationCategory" => "SearchColumnEnumSelectField[]",
+        "terminationDetails" => "SearchColumnStringField[]",
+        "terminationReason" => "SearchColumnSelectField[]",
+        "terminationRegretted" => "SearchColumnEnumSelectField[]",
         "timeApprover" => "SearchColumnSelectField[]",
         "timeOffPlan" => "SearchColumnStringField[]",
         "title" => "SearchColumnStringField[]",

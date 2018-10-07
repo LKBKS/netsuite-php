@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -92,6 +92,8 @@ class NonInventorySaleItem extends Record {
     public $revenueAllocationGroup;
     public $createRevenuePlansOn;
     public $directRevenuePosting;
+    public $contingentRevenueHandling;
+    public $revReclassFXAccount;
     public $storeDisplayName;
     public $storeDisplayThumbnail;
     public $storeDisplayImage;
@@ -221,8 +223,10 @@ class NonInventorySaleItem extends Record {
         "revenueRecognitionRule" => "RecordRef",
         "revRecForecastRule" => "RecordRef",
         "revenueAllocationGroup" => "RecordRef",
-        "createRevenuePlansOn" => "ItemCreateRevenuePlansOn",
+        "createRevenuePlansOn" => "RecordRef",
         "directRevenuePosting" => "boolean",
+        "contingentRevenueHandling" => "boolean",
+        "revReclassFXAccount" => "RecordRef",
         "storeDisplayName" => "string",
         "storeDisplayThumbnail" => "RecordRef",
         "storeDisplayImage" => "RecordRef",

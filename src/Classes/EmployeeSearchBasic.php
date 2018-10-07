@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -31,6 +31,8 @@ class EmployeeSearchBasic extends SearchRecordBasic {
     public $approver;
     public $attention;
     public $authWorkDate;
+    public $baseWage;
+    public $baseWageType;
     public $billAddress;
     public $billingClass;
     public $birthDate;
@@ -41,6 +43,7 @@ class EmployeeSearchBasic extends SearchRecordBasic {
     public $comments;
     public $commissionPlan;
     public $concurrentWebServicesUser;
+    public $compensationCurrency;
     public $country;
     public $county;
     public $dateCreated;
@@ -115,6 +118,10 @@ class EmployeeSearchBasic extends SearchRecordBasic {
     public $subsidiary;
     public $supervisor;
     public $supportRep;
+    public $terminationCategory;
+    public $terminationDetails;
+    public $terminationReason;
+    public $terminationRegretted;
     public $timeApprover;
     public $timeOffPlan;
     public $title;
@@ -139,6 +146,8 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "approver" => "SearchMultiSelectField",
         "attention" => "SearchStringField",
         "authWorkDate" => "SearchDateField",
+        "baseWage" => "SearchDoubleField",
+        "baseWageType" => "SearchEnumMultiSelectField",
         "billAddress" => "SearchStringField",
         "billingClass" => "SearchMultiSelectField",
         "birthDate" => "SearchDateField",
@@ -149,6 +158,7 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "comments" => "SearchStringField",
         "commissionPlan" => "SearchMultiSelectField",
         "concurrentWebServicesUser" => "SearchBooleanField",
+        "compensationCurrency" => "SearchEnumMultiSelectField",
         "country" => "SearchEnumMultiSelectField",
         "county" => "SearchStringField",
         "dateCreated" => "SearchDateField",
@@ -223,6 +233,10 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "subsidiary" => "SearchMultiSelectField",
         "supervisor" => "SearchMultiSelectField",
         "supportRep" => "SearchBooleanField",
+        "terminationCategory" => "SearchEnumMultiSelectField",
+        "terminationDetails" => "SearchStringField",
+        "terminationReason" => "SearchMultiSelectField",
+        "terminationRegretted" => "SearchEnumMultiSelectField",
         "timeApprover" => "SearchMultiSelectField",
         "timeOffPlan" => "SearchMultiSelectField",
         "title" => "SearchStringField",

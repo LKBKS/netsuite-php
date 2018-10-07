@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -108,10 +108,12 @@ class Customer extends Record {
     public $estimatedBudget;
     public $accessRole;
     public $sendEmail;
+    public $assignedWebSite;
     public $password;
     public $password2;
     public $requirePwdChange;
     public $campaignCategory;
+    public $sourceWebSite;
     public $leadSource;
     public $receivablesAccount;
     public $drAccount;
@@ -242,10 +244,12 @@ class Customer extends Record {
         "estimatedBudget" => "float",
         "accessRole" => "RecordRef",
         "sendEmail" => "boolean",
+        "assignedWebSite" => "RecordRef",
         "password" => "string",
         "password2" => "string",
         "requirePwdChange" => "boolean",
         "campaignCategory" => "RecordRef",
+        "sourceWebSite" => "RecordRef",
         "leadSource" => "RecordRef",
         "receivablesAccount" => "RecordRef",
         "drAccount" => "RecordRef",

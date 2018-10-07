@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -23,6 +23,7 @@ class TransactionLinkType {
     static $paramtypesmap = array(
     );
     const _advancedCostAmortization = "_advancedCostAmortization";
+    const _advancedExpenseAmortization = "_advancedExpenseAmortization";
     const _authorizationDeposit = "_authorizationDeposit";
     const _blcgaJeFullfillment = "_blcgaJeFullfillment";
     const _closedPeriodFxVariance = "_closedPeriodFxVariance";
@@ -31,6 +32,7 @@ class TransactionLinkType {
     const _collectTegata = "_collectTegata";
     const _commission = "_commission";
     const _contractCostDeferral = "_contractCostDeferral";
+    const _contractCostDeferralReversal = "_contractCostDeferralReversal";
     const _deferredRevenueReallocation = "_deferredRevenueReallocation";
     const _depositApplication = "_depositApplication";
     const _depositRefundCheck = "_depositRefundCheck";
@@ -39,6 +41,7 @@ class TransactionLinkType {
     const _endorseTegata = "_endorseTegata";
     const _estimateInvoicing = "_estimateInvoicing";
     const _fulfillmentRequestFulfillment = "_fulfillmentRequestFulfillment";
+    const _glImpactAdjustment = "_glImpactAdjustment";
     const _intercompanyAdjustment = "_intercompanyAdjustment";
     const _inventoryCountAdjustment = "_inventoryCountAdjustment";
     const _landedCost = "_landedCost";
@@ -48,8 +51,11 @@ class TransactionLinkType {
     const _orderBillInvoice = "_orderBillInvoice";
     const _orderFulfillmentRequest = "_orderFulfillmentRequest";
     const _orderPickingPacking = "_orderPickingPacking";
+    const _ownershipTransferItemReceipt = "_ownershipTransferItemReceipt";
     const _payment = "_payment";
+    const _paymentRefund = "_paymentRefund";
     const _payTegata = "_payTegata";
+    const _poToOwnershipTransfer = "_poToOwnershipTransfer";
     const _purchaseContractOrder = "_purchaseContractOrder";
     const _purchaseOrderRequisition = "_purchaseOrderRequisition";
     const _purchaseOrderToBlanket = "_purchaseOrderToBlanket";

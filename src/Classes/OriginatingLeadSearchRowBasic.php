@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -33,6 +33,8 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic {
     public $altEmail;
     public $altName;
     public $altPhone;
+    public $assignedSite;
+    public $assignedSiteId;
     public $attention;
     public $availableOffline;
     public $balance;
@@ -175,6 +177,8 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic {
     public $shippingItem;
     public $shipState;
     public $shipZip;
+    public $sourceSite;
+    public $sourceSiteId;
     public $stage;
     public $startDate;
     public $state;
@@ -207,6 +211,8 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic {
         "altEmail" => "SearchColumnStringField[]",
         "altName" => "SearchColumnStringField[]",
         "altPhone" => "SearchColumnStringField[]",
+        "assignedSite" => "SearchColumnSelectField[]",
+        "assignedSiteId" => "SearchColumnLongField[]",
         "attention" => "SearchColumnStringField[]",
         "availableOffline" => "SearchColumnBooleanField[]",
         "balance" => "SearchColumnDoubleField[]",
@@ -349,6 +355,8 @@ class OriginatingLeadSearchRowBasic extends SearchRowBasic {
         "shippingItem" => "SearchColumnSelectField[]",
         "shipState" => "SearchColumnStringField[]",
         "shipZip" => "SearchColumnStringField[]",
+        "sourceSite" => "SearchColumnSelectField[]",
+        "sourceSiteId" => "SearchColumnLongField[]",
         "stage" => "SearchColumnStringField[]",
         "startDate" => "SearchColumnDateField[]",
         "state" => "SearchColumnEnumSelectField[]",

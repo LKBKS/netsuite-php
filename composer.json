@@ -1,5 +1,5 @@
 {
-  "name": "ryanwinchester/netsuite-php",
+  "name": "lkbks/netsuite-php",
   "description": "NetSuite PHP API wrapper",
   "keywords": [ "netsuite", "api", "php" ],
   "type": "library",

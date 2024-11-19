@@ -1,40 +1,94 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
 
 class VendorSearch extends SearchRecord {
+    /**
+     * @var \NetSuite\Classes\VendorSearchBasic
+     */
     public $basic;
+    /**
+     * @var \NetSuite\Classes\AccountSearchBasic
+     */
     public $accountJoin;
+    /**
+     * @var \NetSuite\Classes\CampaignSearchBasic
+     */
     public $campaignResponseJoin;
+    /**
+     * @var \NetSuite\Classes\ContactSearchBasic
+     */
     public $contactJoin;
+    /**
+     * @var \NetSuite\Classes\ContactSearchBasic
+     */
     public $contactPrimaryJoin;
+    /**
+     * @var \NetSuite\Classes\AccountSearchBasic
+     */
     public $expAccountJoin;
+    /**
+     * @var \NetSuite\Classes\FileSearchBasic
+     */
     public $fileJoin;
+    /**
+     * @var \NetSuite\Classes\LocationSearchBasic
+     */
+    public $manufacturingLocationsJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchBasic
+     */
     public $messagesJoin;
-    public $mseSubsidiaryJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchBasic
+     */
     public $messagesFromJoin;
+    /**
+     * @var \NetSuite\Classes\MessageSearchBasic
+     */
     public $messagesToJoin;
+    /**
+     * @var \NetSuite\Classes\MseSubsidiarySearchBasic
+     */
+    public $mseSubsidiaryJoin;
+    /**
+     * @var \NetSuite\Classes\EntityTaxRegistrationSearchBasic
+     */
+    public $taxRegistrationJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchBasic
+     */
     public $timeApproverJoin;
+    /**
+     * @var \NetSuite\Classes\TransactionSearchBasic
+     */
     public $transactionJoin;
+    /**
+     * @var \NetSuite\Classes\EmployeeSearchBasic
+     */
     public $userJoin;
+    /**
+     * @var \NetSuite\Classes\NoteSearchBasic
+     */
     public $userNotesJoin;
+    /**
+     * @var \NetSuite\Classes\CustomSearchJoin[]
+     */
     public $customSearchJoin;
     static $paramtypesmap = array(
         "basic" => "VendorSearchBasic",
@@ -44,10 +98,12 @@ class VendorSearch extends SearchRecord {
         "contactPrimaryJoin" => "ContactSearchBasic",
         "expAccountJoin" => "AccountSearchBasic",
         "fileJoin" => "FileSearchBasic",
+        "manufacturingLocationsJoin" => "LocationSearchBasic",
         "messagesJoin" => "MessageSearchBasic",
-        "mseSubsidiaryJoin" => "MseSubsidiarySearchBasic",
         "messagesFromJoin" => "MessageSearchBasic",
         "messagesToJoin" => "MessageSearchBasic",
+        "mseSubsidiaryJoin" => "MseSubsidiarySearchBasic",
+        "taxRegistrationJoin" => "EntityTaxRegistrationSearchBasic",
         "timeApproverJoin" => "EmployeeSearchBasic",
         "transactionJoin" => "TransactionSearchBasic",
         "userJoin" => "EmployeeSearchBasic",

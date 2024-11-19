@@ -1,35 +1,67 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
 
 class NexusSearchBasic extends SearchRecordBasic {
+    /**
+     * @var \NetSuite\Classes\SearchEnumMultiSelectField
+     */
     public $country;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $description;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $externalId;
+    /**
+     * @var \NetSuite\Classes\SearchStringField
+     */
     public $externalIdString;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $internalId;
+    /**
+     * @var \NetSuite\Classes\SearchLongField
+     */
     public $internalIdNumber;
+    /**
+     * @var \NetSuite\Classes\SearchBooleanField
+     */
     public $isInactive;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $parentNexus;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $state;
+    /**
+     * @var \NetSuite\Classes\SearchMultiSelectField
+     */
     public $taxAgency;
+    /**
+     * @var \NetSuite\Classes\SearchBooleanField
+     */
+    public $taxDateFromFulfillment;
     static $paramtypesmap = array(
         "country" => "SearchEnumMultiSelectField",
         "description" => "SearchStringField",
@@ -41,5 +73,6 @@ class NexusSearchBasic extends SearchRecordBasic {
         "parentNexus" => "SearchMultiSelectField",
         "state" => "SearchMultiSelectField",
         "taxAgency" => "SearchMultiSelectField",
+        "taxDateFromFulfillment" => "SearchBooleanField",
     );
 }

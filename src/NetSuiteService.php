@@ -1,21 +1,21 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
  * created:    2015-01-22  1:04 PM
- * updated:    2018-10-07 04:06:59 AM UTC
+ * updated:    2021-07-20 01:25:32 PM UTC
  */
 
 namespace NetSuite;
@@ -24,40 +24,7 @@ use NetSuite\Classes;
 
 class NetSuiteService extends NetSuiteClient {
 
-    public $generated_from_endpoint = "2018_1";
-
-    /**
-     * Service Call: login
-     * Parameter options:
-     * (LoginRequest) parameters
-     * @return Classes\LoginResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function login(Classes\LoginRequest $arg) {
-        return $this->makeSoapCall("login", $arg);
-    }
-
-    /**
-     * Service Call: ssoLogin
-     * Parameter options:
-     * (SsoLoginRequest) parameters
-     * @return Classes\SsoLoginResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function ssoLogin(Classes\SsoLoginRequest $arg) {
-        return $this->makeSoapCall("ssoLogin", $arg);
-    }
-
-    /**
-     * Service Call: mapSso
-     * Parameter options:
-     * (MapSsoRequest) parameters
-     * @return Classes\MapSsoResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function mapSso(Classes\MapSsoRequest $arg) {
-        return $this->makeSoapCall("mapSso", $arg);
-    }
+    public $generated_from_endpoint = '2021_1';
 
     /**
      * Service Call: changePassword
@@ -79,17 +46,6 @@ class NetSuiteService extends NetSuiteClient {
      */
     public function changeEmail(Classes\ChangeEmailRequest $arg) {
         return $this->makeSoapCall("changeEmail", $arg);
-    }
-
-    /**
-     * Service Call: logout
-     * Parameter options:
-     * (LogoutRequest) parameters
-     * @return Classes\LogoutResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function logout(Classes\LogoutRequest $arg) {
-        return $this->makeSoapCall("logout", $arg);
     }
 
     /**
@@ -126,17 +82,6 @@ class NetSuiteService extends NetSuiteClient {
     }
 
     /**
-     * Service Call: searchMore
-     * Parameter options:
-     * (SearchMoreRequest) parameters
-     * @return Classes\SearchMoreResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function searchMore(Classes\SearchMoreRequest $arg) {
-        return $this->makeSoapCall("searchMore", $arg);
-    }
-
-    /**
      * Service Call: searchMoreWithId
      * Parameter options:
      * (SearchMoreWithIdRequest) parameters
@@ -145,17 +90,6 @@ class NetSuiteService extends NetSuiteClient {
      */
     public function searchMoreWithId(Classes\SearchMoreWithIdRequest $arg) {
         return $this->makeSoapCall("searchMoreWithId", $arg);
-    }
-
-    /**
-     * Service Call: searchNext
-     * Parameter options:
-     * (SearchNextRequest) parameters
-     * @return Classes\SearchNextResponse $arg
-     * @throws Exception invalid function signature message
-     */
-    public function searchNext(Classes\SearchNextRequest $arg) {
-        return $this->makeSoapCall("searchNext", $arg);
     }
 
     /**
@@ -530,6 +464,28 @@ class NetSuiteService extends NetSuiteClient {
      */
     public function getDeleted(Classes\GetDeletedRequest $arg) {
         return $this->makeSoapCall("getDeleted", $arg);
+    }
+
+    /**
+     * Service Call: getAccountGovernanceInfo
+     * Parameter options:
+     * (GetAccountGovernanceInfoRequest) parameters
+     * @return Classes\GetAccountGovernanceInfoResponse $arg
+     * @throws Exception invalid function signature message
+     */
+    public function getAccountGovernanceInfo(Classes\GetAccountGovernanceInfoRequest $arg) {
+        return $this->makeSoapCall("getAccountGovernanceInfo", $arg);
+    }
+
+    /**
+     * Service Call: getIntegrationGovernanceInfo
+     * Parameter options:
+     * (GetIntegrationGovernanceInfoRequest) parameters
+     * @return Classes\GetIntegrationGovernanceInfoResponse $arg
+     * @throws Exception invalid function signature message
+     */
+    public function getIntegrationGovernanceInfo(Classes\GetIntegrationGovernanceInfoRequest $arg) {
+        return $this->makeSoapCall("getIntegrationGovernanceInfo", $arg);
     }
 
 }

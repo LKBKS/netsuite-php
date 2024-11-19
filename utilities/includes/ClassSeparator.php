@@ -1,12 +1,12 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library.
+ * This file is part of the netsuitephp/netsuite-php library.
  *
  * @package    ryanwinchester/netsuite-php
  * @author     Ryan Winchester <fungku@gmail.com>
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  * created:    2015-01-22  1:04 PM
  */
 
@@ -16,6 +16,12 @@ class ClassSeparator
 {
     private $file;
     private $generated_at;
+
+    public static $enum_classes = [
+        'RecordType' => TRUE,
+        'Country' => TRUE,
+        'StatusDetailCodeType' => TRUE,
+    ];
 
     function __construct($file)
     {
@@ -112,8 +118,12 @@ class ClassSeparator
 
     private function makeServiceClassFile($serviceClass)
     {
-        $date = $this->generated_at;
         $template = include utilities_path() . "/includes/templates/netsuiteservice.template.php";
+        $template = preg_replace(
+            '/NS_ENDPOINT;/',
+            sprintf("'%s';", NS_ENDPOINT),
+            $template
+        );
 
         return file_put_contents(app_path() . '/NetSuiteService.php', $template);
     }
@@ -148,12 +158,71 @@ class ClassSeparator
      */
     private function writeClassesToFiles(array $classes)
     {
-        $date = $this->generated_at;
-
-        return array_walk($classes, function ($class) use ($date) {
-            preg_match('~([^ ]+)~', $class, $name);
-            $filename = base_path() . '/src/Classes/' . $name[0] . '.php';
-            $template = include utilities_path() . "/includes/templates/class.template.php";
+        return array_walk($classes, function ($class) {
+            $tokens = array_filter(token_get_all('<?php class ' . $class), function ($token) {
+                return !(!is_array($token) || $token[0] == T_WHITESPACE);
+            });
+            $types = [];
+            while ($token = current($tokens)) {
+                // If this is the class definition, grab the name.
+                if ($token[0] === T_CLASS) {
+                    $token = next($tokens);
+                    $name = $token[1];
+                }
+                // If we see the variable definition for the special
+                // "paramtypesmap" property that defines all the other property
+                // types then start parsing out those types.
+                if ($token[0] === T_VARIABLE && $token[1] == '$paramtypesmap') {
+                    while ($type_token = next($tokens)) {
+                        // Throw out the opening array tag.
+                        if ($type_token[0] === T_ARRAY) {
+                            continue;
+                        }
+                        // This looks like a type definition.
+                        if ($type_token[0] === T_CONSTANT_ENCAPSED_STRING) {
+                            // Store the key as the property name.
+                            $property_name = trim($type_token[1], '"');
+                            // Throw away the => separator.
+                            next($tokens);
+                            // Store the value as the type.
+                            $type_token = next($tokens);
+                            // Store the values as the property type.
+                            $property_type = trim($type_token[1], '"');
+                            // If this is describing a scalar value, just use it.
+                            if (FALSE !== array_search(
+                                    str_replace(['[',']'], '', $property_type),
+                                    ['string', 'integer', 'boolean', 'float']
+                            )) {
+                                $types[$property_name] = $property_type;
+                            }
+                            // Date time is really a string containing a date.
+                            elseif ($property_type == 'dateTime' || $property_type == 'dateTime[]') {
+                                $types[$property_name] = str_replace('dateTime', 'string', $property_type);
+                            }
+                            elseif (isset(ClassSeparator::$enum_classes[$property_type]) || preg_match('/Operator$/', $property_type)) {
+                                $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type . '::*';
+                            }
+                            // This is a NetSuite value so map it to a class.
+                            else {
+                                $types[$property_name] = '\\NetSuite\\Classes\\' . $property_type;
+                            }
+                        }
+                        // We've fallen out of the array definition so continue.
+                        else {
+                            $token = $type_token;
+                            break;
+                        }
+                    }
+                }
+                next($tokens);
+            }
+            // Add a doc comment for each property.
+            foreach ($types as $variable_name => $property_type) {
+                $class = preg_replace('/public \$' . $variable_name . ';/', "/**\n     * @var $property_type\n     */\n    public \$$variable_name;", $class);
+            }
+            // Template write the class.
+            $filename = base_path() . '/src/Classes/' . $name . '.php';
+            $template = include utilities_path() . '/includes/templates/class.template.php';
             file_put_contents($filename, $template);
         });
     }

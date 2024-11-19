@@ -17,11 +17,9 @@
 
 namespace NetSuite\Classes;
 
-class ItemSupplyReplenishmentMethod {
+class UsageStatus {
     static $paramtypesmap = array(
     );
-    const _masterProductionScheduling = "_masterProductionScheduling";
-    const _materialRequirementsPlanning = "_materialRequirementsPlanning";
-    const _reorderPoint = "_reorderPoint";
-    const _timePhased = "_timePhased";
+    const _active = "_active";
+    const _voided = "_voided";
 }

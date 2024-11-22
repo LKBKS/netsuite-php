@@ -17,11 +17,22 @@
 
 namespace NetSuite\Classes;
 
-class ItemSupplyReplenishmentMethod {
+class EmployeeCorporateCards {
+    /**
+     * @var string
+     */
+    public $embossedName;
+    /**
+     * @var string
+     */
+    public $expiration;
+    /**
+     * @var \NetSuite\Classes\RecordRef
+     */
+    public $corporateCardProfile;
     static $paramtypesmap = array(
+        "embossedName" => "string",
+        "expiration" => "dateTime",
+        "corporateCardProfile" => "RecordRef",
     );
-    const _masterProductionScheduling = "_masterProductionScheduling";
-    const _materialRequirementsPlanning = "_materialRequirementsPlanning";
-    const _reorderPoint = "_reorderPoint";
-    const _timePhased = "_timePhased";
 }

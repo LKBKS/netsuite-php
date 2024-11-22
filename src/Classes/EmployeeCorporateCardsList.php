@@ -17,11 +17,17 @@
 
 namespace NetSuite\Classes;
 
-class ItemSupplyReplenishmentMethod {
+class EmployeeCorporateCardsList {
+    /**
+     * @var \NetSuite\Classes\EmployeeCorporateCards[]
+     */
+    public $corporateCards;
+    /**
+     * @var boolean
+     */
+    public $replaceAll;
     static $paramtypesmap = array(
+        "corporateCards" => "EmployeeCorporateCards[]",
+        "replaceAll" => "boolean",
     );
-    const _masterProductionScheduling = "_masterProductionScheduling";
-    const _materialRequirementsPlanning = "_materialRequirementsPlanning";
-    const _reorderPoint = "_reorderPoint";
-    const _timePhased = "_timePhased";
 }

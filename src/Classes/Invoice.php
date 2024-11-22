@@ -591,14 +591,6 @@ class Invoice extends Record {
      */
     public $taxDetailsList;
     /**
-     * @var \NetSuite\Classes\InstallmentList
-     */
-    public $installmentList;
-    /**
-     * @var boolean
-     */
-    public $overrideInstallments;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -754,8 +746,6 @@ class Invoice extends Record {
         "approvalStatus" => "RecordRef",
         "accountingBookDetailList" => "AccountingBookDetailList",
         "taxDetailsList" => "TaxDetailsList",
-        "installmentList" => "InstallmentList",
-        "overrideInstallments" => "boolean",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

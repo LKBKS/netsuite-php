@@ -12,7 +12,7 @@
 
 function base_path()
 {
-    return realpath(__DIR__.'/../..');
+    return __DIR__.'/../..';
 }
 
 function app_path()

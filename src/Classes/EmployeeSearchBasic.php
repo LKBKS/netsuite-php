@@ -131,10 +131,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
      */
     public $concurrentWebServicesUser;
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
-     */
-    public $corporateCardProfile;
-    /**
      * @var \NetSuite\Classes\SearchEnumMultiSelectField
      */
     public $country;
@@ -187,10 +183,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
      */
     public $email;
     /**
-     * @var \NetSuite\Classes\SearchStringField
-     */
-    public $embossedName;
-    /**
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $employeeStatus;
@@ -218,10 +210,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
     public $expenseReportCurrency;
-    /**
-     * @var \NetSuite\Classes\SearchDateField
-     */
-    public $expiration;
     /**
      * @var \NetSuite\Classes\SearchMultiSelectField
      */
@@ -559,7 +547,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "commissionPlan" => "SearchMultiSelectField",
         "compensationCurrency" => "SearchEnumMultiSelectField",
         "concurrentWebServicesUser" => "SearchBooleanField",
-        "corporateCardProfile" => "SearchMultiSelectField",
         "country" => "SearchEnumMultiSelectField",
         "county" => "SearchStringField",
         "dateCreated" => "SearchDateField",
@@ -573,7 +560,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "education" => "SearchMultiSelectField",
         "eligibleForCommission" => "SearchBooleanField",
         "email" => "SearchStringField",
-        "embossedName" => "SearchStringField",
         "employeeStatus" => "SearchMultiSelectField",
         "employeeType" => "SearchMultiSelectField",
         "employeeTypeKpi" => "SearchBooleanField",
@@ -581,7 +567,6 @@ class EmployeeSearchBasic extends SearchRecordBasic {
         "ethnicity" => "SearchMultiSelectField",
         "expenseLimit" => "SearchDoubleField",
         "expenseReportCurrency" => "SearchMultiSelectField",
-        "expiration" => "SearchDateField",
         "externalId" => "SearchMultiSelectField",
         "externalIdString" => "SearchStringField",
         "fax" => "SearchStringField",

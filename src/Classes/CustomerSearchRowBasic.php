@@ -271,10 +271,6 @@ class CustomerSearchRowBasic extends SearchRowBasic {
      */
     public $daysOverdue;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $defaultAllocationStrategy;
-    /**
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
     public $defaultOrderPriority;
@@ -798,7 +794,6 @@ class CustomerSearchRowBasic extends SearchRowBasic {
         "dateClosed" => "SearchColumnDateField[]",
         "dateCreated" => "SearchColumnDateField[]",
         "daysOverdue" => "SearchColumnLongField[]",
-        "defaultAllocationStrategy" => "SearchColumnSelectField[]",
         "defaultOrderPriority" => "SearchColumnDoubleField[]",
         "defaultTaxReg" => "SearchColumnStringField[]",
         "depositBalance" => "SearchColumnDoubleField[]",

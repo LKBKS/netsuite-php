@@ -567,21 +567,9 @@ class AssemblyItem extends Record {
      */
     public $autoLeadTime;
     /**
-     * @var float
+     * @var integer
      */
     public $buildTime;
-    /**
-     * @var float
-     */
-    public $buildTimeLotSize;
-    /**
-     * @var float
-     */
-    public $fixedBuildTime;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $planningItemCategory;
     /**
      * @var float
      */
@@ -1028,10 +1016,7 @@ class AssemblyItem extends Record {
         "averageCost" => "float",
         "leadTime" => "integer",
         "autoLeadTime" => "boolean",
-        "buildTime" => "float",
-        "buildTimeLotSize" => "float",
-        "fixedBuildTime" => "float",
-        "planningItemCategory" => "RecordRef",
+        "buildTime" => "integer",
         "lastPurchasePrice" => "float",
         "purchaseDescription" => "string",
         "safetyStockLevel" => "float",

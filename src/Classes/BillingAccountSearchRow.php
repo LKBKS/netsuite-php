@@ -23,10 +23,6 @@ class BillingAccountSearchRow extends SearchRow {
      */
     public $basic;
     /**
-     * @var \NetSuite\Classes\CustomerSearchRowBasic
-     */
-    public $customerJoin;
-    /**
      * @var \NetSuite\Classes\JobSearchRowBasic
      */
     public $jobJoin;
@@ -36,7 +32,6 @@ class BillingAccountSearchRow extends SearchRow {
     public $customSearchJoin;
     static $paramtypesmap = array(
         "basic" => "BillingAccountSearchRowBasic",
-        "customerJoin" => "CustomerSearchRowBasic",
         "jobJoin" => "JobSearchRowBasic",
         "customSearchJoin" => "CustomSearchRowBasic[]",
     );

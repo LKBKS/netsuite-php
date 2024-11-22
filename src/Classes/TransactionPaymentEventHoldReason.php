@@ -37,7 +37,6 @@ class TransactionPaymentEventHoldReason {
     const _gatewayError = "_gatewayError";
     const _generalHold = "_generalHold";
     const _generalReject = "_generalReject";
-    const _insufficientFunds = "_insufficientFunds";
     const _notRequired = "_notRequired";
     const _operationWasSuccessful = "_operationWasSuccessful";
     const _operationWasTerminated = "_operationWasTerminated";

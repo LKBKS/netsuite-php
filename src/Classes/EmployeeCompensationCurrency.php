@@ -164,7 +164,6 @@ class EmployeeCompensationCurrency {
     const _shp = "_shp";
     const _sit = "_sit";
     const _skk = "_skk";
-    const _sle = "_sle";
     const _sll = "_sll";
     const _sos = "_sos";
     const _spl = "_spl";
@@ -194,7 +193,6 @@ class EmployeeCompensationCurrency {
     const _uyu = "_uyu";
     const _uzs = "_uzs";
     const _veb = "_veb";
-    const _ved = "_ved";
     const _vef = "_vef";
     const _ves = "_ves";
     const _vnd = "_vnd";

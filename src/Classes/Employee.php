@@ -451,10 +451,6 @@ class Employee extends Record {
      */
     public $bonusTargetPayFrequency;
     /**
-     * @var \NetSuite\Classes\EmployeeCorporateCardsList
-     */
-    public $corporateCardsList;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -575,7 +571,6 @@ class Employee extends Record {
         "bonusTargetComment" => "string",
         "bonusTargetType" => "EmployeeBonusTargetType",
         "bonusTargetPayFrequency" => "EmployeeBonusTargetPayFrequency",
-        "corporateCardsList" => "EmployeeCorporateCardsList",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

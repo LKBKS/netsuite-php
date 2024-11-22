@@ -195,10 +195,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
      */
     public $concurrentWebServicesUser;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $corporateCardProfile;
-    /**
      * @var \NetSuite\Classes\SearchColumnEnumSelectField[]
      */
     public $country;
@@ -235,10 +231,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
      */
     public $email;
     /**
-     * @var \NetSuite\Classes\SearchColumnStringField[]
-     */
-    public $embossedName;
-    /**
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $employeeStatus;
@@ -266,10 +258,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
     public $expenseReportCurrency;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDateField[]
-     */
-    public $expiration;
     /**
      * @var \NetSuite\Classes\SearchColumnSelectField[]
      */
@@ -675,7 +663,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "comments" => "SearchColumnStringField[]",
         "compensationCurrency" => "SearchColumnEnumSelectField[]",
         "concurrentWebServicesUser" => "SearchColumnBooleanField[]",
-        "corporateCardProfile" => "SearchColumnSelectField[]",
         "country" => "SearchColumnEnumSelectField[]",
         "countryCode" => "SearchColumnStringField[]",
         "dateCreated" => "SearchColumnDateField[]",
@@ -685,7 +672,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "department" => "SearchColumnSelectField[]",
         "eligibleForCommission" => "SearchColumnBooleanField[]",
         "email" => "SearchColumnStringField[]",
-        "embossedName" => "SearchColumnStringField[]",
         "employeeStatus" => "SearchColumnSelectField[]",
         "employeeType" => "SearchColumnSelectField[]",
         "entityId" => "SearchColumnStringField[]",
@@ -693,7 +679,6 @@ class EmployeeSearchRowBasic extends SearchRowBasic {
         "ethnicity" => "SearchColumnSelectField[]",
         "expenseLimit" => "SearchColumnDoubleField[]",
         "expenseReportCurrency" => "SearchColumnSelectField[]",
-        "expiration" => "SearchColumnDateField[]",
         "externalId" => "SearchColumnSelectField[]",
         "fax" => "SearchColumnStringField[]",
         "firstName" => "SearchColumnStringField[]",

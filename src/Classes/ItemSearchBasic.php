@@ -113,10 +113,6 @@ class ItemSearchBasic extends SearchRecordBasic {
     /**
      * @var \NetSuite\Classes\SearchDoubleField
      */
-    public $buildTimeLotSize;
-    /**
-     * @var \NetSuite\Classes\SearchDoubleField
-     */
     public $buyItNowPrice;
     /**
      * @var \NetSuite\Classes\SearchStringField
@@ -338,10 +334,6 @@ class ItemSearchBasic extends SearchRecordBasic {
      * @var \NetSuite\Classes\SearchStringField
      */
     public $feedName;
-    /**
-     * @var \NetSuite\Classes\SearchDoubleField
-     */
-    public $fixedBuildTime;
     /**
      * @var \NetSuite\Classes\SearchDoubleField
      */
@@ -835,10 +827,6 @@ class ItemSearchBasic extends SearchRecordBasic {
      */
     public $periodicLotSizeType;
     /**
-     * @var \NetSuite\Classes\SearchMultiSelectField
-     */
-    public $planningItemCategory;
-    /**
      * @var \NetSuite\Classes\SearchStringField
      */
     public $preferenceCriterion;
@@ -1262,7 +1250,6 @@ class ItemSearchBasic extends SearchRecordBasic {
         "bomQuantity" => "SearchDoubleField",
         "buildEntireAssembly" => "SearchBooleanField",
         "buildTime" => "SearchDoubleField",
-        "buildTimeLotSize" => "SearchDoubleField",
         "buyItNowPrice" => "SearchDoubleField",
         "caption" => "SearchStringField",
         "category" => "SearchMultiSelectField",
@@ -1319,7 +1306,6 @@ class ItemSearchBasic extends SearchRecordBasic {
         "featuredDescription" => "SearchStringField",
         "feedDescription" => "SearchStringField",
         "feedName" => "SearchStringField",
-        "fixedBuildTime" => "SearchDoubleField",
         "fixedLotSize" => "SearchDoubleField",
         "forwardConsumptionDays" => "SearchLongField",
         "fraudRisk" => "SearchEnumMultiSelectField",
@@ -1443,7 +1429,6 @@ class ItemSearchBasic extends SearchRecordBasic {
         "parent" => "SearchMultiSelectField",
         "periodicLotSizeDays" => "SearchLongField",
         "periodicLotSizeType" => "SearchEnumMultiSelectField",
-        "planningItemCategory" => "SearchMultiSelectField",
         "preferenceCriterion" => "SearchStringField",
         "preferredBin" => "SearchBooleanField",
         "preferredLocation" => "SearchMultiSelectField",

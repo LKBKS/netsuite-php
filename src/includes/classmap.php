@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2024-11-19 10:37:06 PM UTC
+ * generated:  2021-04-19 07:44:22 PM PDT
  */
 
 return array(
@@ -646,7 +646,6 @@ return array(
 		"CustomerNumberFormat" => "NetSuite\\Classes\\CustomerNumberFormat",
 		"BillingAccountFrequency" => "NetSuite\\Classes\\BillingAccountFrequency",
 		"JobSchedulingMethod" => "NetSuite\\Classes\\JobSchedulingMethod",
-		"CustomerThirdPartyCarrier" => "NetSuite\\Classes\\CustomerThirdPartyCarrier",
 		"Subscriptions" => "NetSuite\\Classes\\Subscriptions",
 		"SubscriptionsList" => "NetSuite\\Classes\\SubscriptionsList",
 		"Contact" => "NetSuite\\Classes\\Contact",
@@ -1230,7 +1229,6 @@ return array(
 		"CashSalePaymentOperation" => "NetSuite\\Classes\\CashSalePaymentOperation",
 		"SalesOrderPaymentOperation" => "NetSuite\\Classes\\SalesOrderPaymentOperation",
 		"SalesOrderHandlingMode" => "NetSuite\\Classes\\SalesOrderHandlingMode",
-		"UsageStatus" => "NetSuite\\Classes\\UsageStatus",
 		"Opportunity" => "NetSuite\\Classes\\Opportunity",
 		"OpportunitySalesTeam" => "NetSuite\\Classes\\OpportunitySalesTeam",
 		"OpportunitySalesTeamList" => "NetSuite\\Classes\\OpportunitySalesTeamList",
@@ -1608,8 +1606,6 @@ return array(
 		"Employee" => "NetSuite\\Classes\\Employee",
 		"EmployeeSubscriptions" => "NetSuite\\Classes\\EmployeeSubscriptions",
 		"EmployeeSubscriptionsList" => "NetSuite\\Classes\\EmployeeSubscriptionsList",
-		"EmployeeCorporateCards" => "NetSuite\\Classes\\EmployeeCorporateCards",
-		"EmployeeCorporateCardsList" => "NetSuite\\Classes\\EmployeeCorporateCardsList",
 		"EmployeeAddressbook" => "NetSuite\\Classes\\EmployeeAddressbook",
 		"EmployeeAddressbookList" => "NetSuite\\Classes\\EmployeeAddressbookList",
 		"EmployeeRoles" => "NetSuite\\Classes\\EmployeeRoles",

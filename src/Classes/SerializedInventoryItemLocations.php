@@ -91,14 +91,6 @@ class SerializedInventoryItemLocations {
      */
     public $buildTime;
     /**
-     * @var float
-     */
-    public $fixedBuildTime;
-    /**
-     * @var float
-     */
-    public $buildTimeLotSize;
-    /**
      * @var string
      */
     public $lastInvtCountDate;
@@ -213,8 +205,6 @@ class SerializedInventoryItemLocations {
         "cost" => "float",
         "inventoryCostTemplate" => "RecordRef",
         "buildTime" => "float",
-        "fixedBuildTime" => "float",
-        "buildTimeLotSize" => "float",
         "lastInvtCountDate" => "dateTime",
         "nextInvtCountDate" => "dateTime",
         "invtCountInterval" => "integer",

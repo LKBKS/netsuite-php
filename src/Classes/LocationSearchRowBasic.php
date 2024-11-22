@@ -151,14 +151,6 @@ class LocationSearchRowBasic extends SearchRowBasic {
      */
     public $sameDayPickupCutOffTime;
     /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $soPredConfidence;
-    /**
-     * @var \NetSuite\Classes\SearchColumnLongField[]
-     */
-    public $soPredictedDays;
-    /**
      * @var \NetSuite\Classes\SearchColumnDateField[]
      */
     public $startTime;
@@ -232,8 +224,6 @@ class LocationSearchRowBasic extends SearchRowBasic {
         "nextPickupCutOffTime" => "SearchColumnDateField[]",
         "phone" => "SearchColumnStringField[]",
         "sameDayPickupCutOffTime" => "SearchColumnDateField[]",
-        "soPredConfidence" => "SearchColumnDoubleField[]",
-        "soPredictedDays" => "SearchColumnLongField[]",
         "startTime" => "SearchColumnDateField[]",
         "state" => "SearchColumnStringField[]",
         "storePickupBufferStock" => "SearchColumnDoubleField[]",

@@ -919,10 +919,6 @@ class SerializedInventoryItem extends Record {
      */
     public $upperWarningLimit;
     /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $planningItemCategory;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -1160,7 +1156,6 @@ class SerializedInventoryItem extends Record {
         "secondaryConsumptionUnit" => "RecordRef",
         "lowerWarningLimit" => "float",
         "upperWarningLimit" => "float",
-        "planningItemCategory" => "RecordRef",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

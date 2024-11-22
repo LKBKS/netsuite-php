@@ -20,7 +20,6 @@ namespace NetSuite\Classes;
 class ItemSupplyReplenishmentMethod {
     static $paramtypesmap = array(
     );
-    const _masterProductionScheduling = "_masterProductionScheduling";
     const _materialRequirementsPlanning = "_materialRequirementsPlanning";
     const _reorderPoint = "_reorderPoint";
     const _timePhased = "_timePhased";

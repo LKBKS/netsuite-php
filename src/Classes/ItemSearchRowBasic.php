@@ -129,10 +129,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
     /**
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
-    public $buildTimeLotSize;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
     public $buyItNowPrice;
     /**
      * @var \NetSuite\Classes\SearchColumnStringField[]
@@ -362,10 +358,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $feedName;
-    /**
-     * @var \NetSuite\Classes\SearchColumnDoubleField[]
-     */
-    public $fixedBuildTime;
     /**
      * @var \NetSuite\Classes\SearchColumnDoubleField[]
      */
@@ -899,10 +891,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
      */
     public $periodicLotSizeType;
     /**
-     * @var \NetSuite\Classes\SearchColumnSelectField[]
-     */
-    public $planningItemCategory;
-    /**
      * @var \NetSuite\Classes\SearchColumnStringField[]
      */
     public $preferenceCriterion;
@@ -1390,7 +1378,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
         "bomQuantity" => "SearchColumnDoubleField[]",
         "buildEntireAssembly" => "SearchColumnBooleanField[]",
         "buildTime" => "SearchColumnDoubleField[]",
-        "buildTimeLotSize" => "SearchColumnDoubleField[]",
         "buyItNowPrice" => "SearchColumnDoubleField[]",
         "category" => "SearchColumnStringField[]",
         "categoryPreferred" => "SearchColumnStringField[]",
@@ -1449,7 +1436,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
         "featuredDescription" => "SearchColumnStringField[]",
         "feedDescription" => "SearchColumnStringField[]",
         "feedName" => "SearchColumnStringField[]",
-        "fixedBuildTime" => "SearchColumnDoubleField[]",
         "fixedLotSize" => "SearchColumnDoubleField[]",
         "forwardConsumptionDays" => "SearchColumnLongField[]",
         "fraudRisk" => "SearchColumnEnumSelectField[]",
@@ -1583,7 +1569,6 @@ class ItemSearchRowBasic extends SearchRowBasic {
         "parent" => "SearchColumnSelectField[]",
         "periodicLotSizeDays" => "SearchColumnLongField[]",
         "periodicLotSizeType" => "SearchColumnEnumSelectField[]",
-        "planningItemCategory" => "SearchColumnSelectField[]",
         "preferenceCriterion" => "SearchColumnStringField[]",
         "preferredBin" => "SearchColumnBooleanField[]",
         "preferredLocation" => "SearchColumnSelectField[]",

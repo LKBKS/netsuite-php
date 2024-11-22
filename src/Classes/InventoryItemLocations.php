@@ -83,14 +83,6 @@ class InventoryItemLocations {
      */
     public $buildTime;
     /**
-     * @var float
-     */
-    public $fixedBuildTime;
-    /**
-     * @var float
-     */
-    public $buildTimeLotSize;
-    /**
      * @var string
      */
     public $lastInvtCountDate;
@@ -207,8 +199,6 @@ class InventoryItemLocations {
         "cost" => "float",
         "inventoryCostTemplate" => "RecordRef",
         "buildTime" => "float",
-        "fixedBuildTime" => "float",
-        "buildTimeLotSize" => "float",
         "lastInvtCountDate" => "dateTime",
         "nextInvtCountDate" => "dateTime",
         "isWip" => "boolean",

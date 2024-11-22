@@ -55,10 +55,6 @@ class Usage extends Record {
      */
     public $usageDate;
     /**
-     * @var \NetSuite\Classes\UsageStatus
-     */
-    public $status;
-    /**
      * @var string
      */
     public $internalId;
@@ -76,7 +72,6 @@ class Usage extends Record {
         "usageSubscriptionLine" => "RecordRef",
         "usageQuantity" => "float",
         "usageDate" => "dateTime",
-        "status" => "UsageStatus",
         "internalId" => "string",
         "externalId" => "string",
     );

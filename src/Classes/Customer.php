@@ -355,10 +355,6 @@ class Customer extends Record {
      */
     public $thirdPartyCountry;
     /**
-     * @var \NetSuite\Classes\CustomerThirdPartyCarrier
-     */
-    public $thirdPartyCarrier;
-    /**
      * @var boolean
      */
     public $giveAccess;
@@ -559,10 +555,6 @@ class Customer extends Record {
      */
     public $taxRegistrationList;
     /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $defaultAllocationStrategy;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -659,7 +651,6 @@ class Customer extends Record {
         "thirdPartyAcct" => "string",
         "thirdPartyZipcode" => "string",
         "thirdPartyCountry" => "Country",
-        "thirdPartyCarrier" => "CustomerThirdPartyCarrier",
         "giveAccess" => "boolean",
         "estimatedBudget" => "float",
         "accessRole" => "RecordRef",
@@ -710,7 +701,6 @@ class Customer extends Record {
         "groupPricingList" => "CustomerGroupPricingList",
         "itemPricingList" => "CustomerItemPricingList",
         "taxRegistrationList" => "CustomerTaxRegistrationList",
-        "defaultAllocationStrategy" => "RecordRef",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

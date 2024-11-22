@@ -251,10 +251,6 @@ class CustomerDeposit extends Record {
      */
     public $accountingBookDetailList;
     /**
-     * @var float
-     */
-    public $salesOrderRequiredDepositDue;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -325,7 +321,6 @@ class CustomerDeposit extends Record {
         "tranId" => "string",
         "applyList" => "CustomerDepositApplyList",
         "accountingBookDetailList" => "AccountingBookDetailList",
-        "salesOrderRequiredDepositDue" => "float",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

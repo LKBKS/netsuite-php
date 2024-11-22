@@ -227,18 +227,6 @@ class OtherChargePurchaseItem extends Record {
      */
     public $consumptionUnit;
     /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billQtyVarianceAcct;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billPriceVarianceAcct;
-    /**
-     * @var \NetSuite\Classes\RecordRef
-     */
-    public $billExchRateVarianceAcct;
-    /**
      * @var \NetSuite\Classes\CustomFieldList
      */
     public $customFieldList;
@@ -303,9 +291,6 @@ class OtherChargePurchaseItem extends Record {
         "vendor" => "RecordRef",
         "hierarchyVersionsList" => "OtherChargePurchaseItemHierarchyVersionsList",
         "consumptionUnit" => "RecordRef",
-        "billQtyVarianceAcct" => "RecordRef",
-        "billPriceVarianceAcct" => "RecordRef",
-        "billExchRateVarianceAcct" => "RecordRef",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

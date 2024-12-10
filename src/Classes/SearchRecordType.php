@@ -1,20 +1,18 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -46,6 +44,7 @@ class SearchRecordType {
     const customerCategory = "customerCategory";
     const customerMessage = "customerMessage";
     const customerStatus = "customerStatus";
+    const customerSubsidiaryRelationship = "customerSubsidiaryRelationship";
     const customList = "customList";
     const customRecord = "customRecord";
     const department = "department";
@@ -73,6 +72,7 @@ class SearchRecordType {
     const manufacturingCostTemplate = "manufacturingCostTemplate";
     const manufacturingOperationTask = "manufacturingOperationTask";
     const manufacturingRouting = "manufacturingRouting";
+    const merchandiseHierarchyNode = "merchandiseHierarchyNode";
     const message = "message";
     const nexus = "nexus";
     const note = "note";
@@ -110,5 +110,6 @@ class SearchRecordType {
     const usage = "usage";
     const vendor = "vendor";
     const vendorCategory = "vendorCategory";
+    const vendorSubsidiaryRelationship = "vendorSubsidiaryRelationship";
     const winLossReason = "winLossReason";
 }

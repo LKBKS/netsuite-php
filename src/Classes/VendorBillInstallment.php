@@ -14,20 +14,37 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-03-31 08:48:20 PM UTC
+ * generated:  2020-04-10 09:56:55 PM UTC
  */
 
 namespace NetSuite\Classes;
 
-class ConsolidatedExchangeRateFilter {
-    public $period;
-    public $book;
-    public $fromSubsidiary;
-    public $toSubsidiary;
+class VendorBillInstallment {
+    /**
+     * @var float
+     */
+    public $amount;
+    /**
+     * @var string
+     */
+    public $dueDate;
+    /**
+     * @var float
+     */
+    public $amountDue;
+    /**
+     * @var integer
+     */
+    public $seqNum;
+    /**
+     * @var string
+     */
+    public $status;
     static $paramtypesmap = array(
-        "period" => "RecordRef",
-        "book" => "RecordRef",
-        "fromSubsidiary" => "RecordRef",
-        "toSubsidiary" => "RecordRef",
+        "amount" => "float",
+        "dueDate" => "dateTime",
+        "amountDue" => "float",
+        "seqNum" => "integer",
+        "status" => "string",
     );
 }

@@ -1,20 +1,18 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2017-08-01 09:12:52 PM UTC
  */
 
 namespace NetSuite\Classes;
@@ -69,7 +67,6 @@ class LocationTimeZone {
     const _asiaKolkata = "_asiaKolkata";
     const _asiaKrasnoyarsk = "_asiaKrasnoyarsk";
     const _asiaKualaLumpur = "_asiaKualaLumpur";
-    const _asiaMagadan = "_asiaMagadan";
     const _asiaManila = "_asiaManila";
     const _asiaMuscat = "_asiaMuscat";
     const _asiaRangoon = "_asiaRangoon";
@@ -104,6 +101,7 @@ class LocationTimeZone {
     const _europeParis = "_europeParis";
     const _europeWarsaw = "_europeWarsaw";
     const _pacificAuckland = "_pacificAuckland";
+    const _pacificGuadalcanal = "_pacificGuadalcanal";
     const _pacificGuam = "_pacificGuam";
     const _pacificHonolulu = "_pacificHonolulu";
     const _pacificKwajalein = "_pacificKwajalein";

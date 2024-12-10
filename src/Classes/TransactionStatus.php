@@ -1,20 +1,18 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -25,7 +23,13 @@ class TransactionStatus {
     const _billCancelled = "_billCancelled";
     const _billOpen = "_billOpen";
     const _billPaidInFull = "_billPaidInFull";
+    const _billPaymentApproved = "_billPaymentApproved";
+    const _billPaymentConfirmed = "_billPaymentConfirmed";
+    const _billPaymentDeclined = "_billPaymentDeclined";
+    const _billPaymentInTransit = "_billPaymentInTransit";
     const _billPaymentOnlineBillPayPendingAccountingApproval = "_billPaymentOnlineBillPayPendingAccountingApproval";
+    const _billPaymentPendingApproval = "_billPaymentPendingApproval";
+    const _billPaymentRejected = "_billPaymentRejected";
     const _billPaymentVoided = "_billPaymentVoided";
     const _billPendingApproval = "_billPendingApproval";
     const _billRejected = "_billRejected";
@@ -42,10 +46,12 @@ class TransactionStatus {
     const _creditMemoFullyApplied = "_creditMemoFullyApplied";
     const _creditMemoOpen = "_creditMemoOpen";
     const _creditMemoVoided = "_creditMemoVoided";
+    const _customerDepositCancelled = "_customerDepositCancelled";
     const _customerDepositDeposited = "_customerDepositDeposited";
     const _customerDepositFullyApplied = "_customerDepositFullyApplied";
     const _customerDepositNotDeposited = "_customerDepositNotDeposited";
     const _customerDepositUnapprovedPayment = "_customerDepositUnapprovedPayment";
+    const _customerRefundCancelled = "_customerRefundCancelled";
     const _customerRefundVoided = "_customerRefundVoided";
     const _estimateClosed = "_estimateClosed";
     const _estimateExpired = "_estimateExpired";
@@ -56,6 +62,7 @@ class TransactionStatus {
     const _expenseReportApprovedOverriddenByAccounting = "_expenseReportApprovedOverriddenByAccounting";
     const _expenseReportInProgress = "_expenseReportInProgress";
     const _expenseReportPaidInFull = "_expenseReportPaidInFull";
+    const _expenseReportPaymentInTransit = "_expenseReportPaymentInTransit";
     const _expenseReportPendingAccountingApproval = "_expenseReportPendingAccountingApproval";
     const _expenseReportPendingSupervisorApproval = "_expenseReportPendingSupervisorApproval";
     const _expenseReportRejectedByAccounting = "_expenseReportRejectedByAccounting";
@@ -84,10 +91,14 @@ class TransactionStatus {
     const _paycheckPendingTaxCalculation = "_paycheckPendingTaxCalculation";
     const _paycheckPreview = "_paycheckPreview";
     const _paycheckReversed = "_paycheckReversed";
+    const _paymentCancelled = "_paymentCancelled";
     const _paymentDeposited = "_paymentDeposited";
     const _paymentNotDeposited = "_paymentNotDeposited";
     const _paymentUnapprovedPayment = "_paymentUnapprovedPayment";
     const _payrollLiabilityCheckVoided = "_payrollLiabilityCheckVoided";
+    const _periodEndJournalApprovedForPosting = "_periodEndJournalApprovedForPosting";
+    const _periodEndJournalPendingApproval = "_periodEndJournalPendingApproval";
+    const _periodEndJournalRejected = "_periodEndJournalRejected";
     const _purchaseOrderClosed = "_purchaseOrderClosed";
     const _purchaseOrderFullyBilled = "_purchaseOrderFullyBilled";
     const _purchaseOrderPartiallyReceived = "_purchaseOrderPartiallyReceived";
@@ -95,6 +106,7 @@ class TransactionStatus {
     const _purchaseOrderPendingBillingPartiallyReceived = "_purchaseOrderPendingBillingPartiallyReceived";
     const _purchaseOrderPendingReceipt = "_purchaseOrderPendingReceipt";
     const _purchaseOrderPendingSupervisorApproval = "_purchaseOrderPendingSupervisorApproval";
+    const _purchaseOrderPlanned = "_purchaseOrderPlanned";
     const _purchaseOrderRejectedBySupervisor = "_purchaseOrderRejectedBySupervisor";
     const _requisitionCancelled = "_requisitionCancelled";
     const _requisitionClosed = "_requisitionClosed";

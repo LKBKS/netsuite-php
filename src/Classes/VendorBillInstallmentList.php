@@ -14,16 +14,22 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2017-08-01 09:12:52 PM UTC
+ * generated:  2020-04-10 09:56:55 PM UTC
  */
 
 namespace NetSuite\Classes;
 
-class ItemCreateRevenuePlansOn {
+class VendorBillInstallmentList {
+    /**
+     * @var \NetSuite\Classes\VendorBillInstallment[]
+     */
+    public $vendorBillInstallment;
+    /**
+     * @var boolean
+     */
+    public $replaceAll;
     static $paramtypesmap = array(
+        "vendorBillInstallment" => "VendorBillInstallment[]",
+        "replaceAll" => "boolean",
     );
-    const _billing = "_billing";
-    const _fulfillment = "_fulfillment";
-    const _projectProgress = "_projectProgress";
-    const _revenueArrangementCreation = "_revenueArrangementCreation";
 }

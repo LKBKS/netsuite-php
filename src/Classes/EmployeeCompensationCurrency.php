@@ -1,20 +1,18 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 04:06:59 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -166,6 +164,7 @@ class EmployeeCompensationCurrency {
     const _shp = "_shp";
     const _sit = "_sit";
     const _skk = "_skk";
+    const _sle = "_sle";
     const _sll = "_sll";
     const _sos = "_sos";
     const _spl = "_spl";
@@ -195,6 +194,7 @@ class EmployeeCompensationCurrency {
     const _uyu = "_uyu";
     const _uzs = "_uzs";
     const _veb = "_veb";
+    const _ved = "_ved";
     const _vef = "_vef";
     const _ves = "_ves";
     const _vnd = "_vnd";
@@ -218,4 +218,5 @@ class EmployeeCompensationCurrency {
     const _zmw = "_zmw";
     const _zrn = "_zrn";
     const _zwd = "_zwd";
+    const _zwl = "_zwl";
 }

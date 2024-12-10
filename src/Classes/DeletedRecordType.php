@@ -1,20 +1,18 @@
 <?php
 /**
- * This file is part of the SevenShores/NetSuite library
+ * This file is part of the netsuitephp/netsuite-php library
  * AND originally from the NetSuite PHP Toolkit.
  *
  * New content:
  * @package    ryanwinchester/netsuite-php
  * @copyright  Copyright (c) Ryan Winchester
  * @license    http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
- * @link       https://github.com/ryanwinchester/netsuite-php
+ * @link       https://github.com/netsuitephp/netsuite-php
  *
  * Original content:
  * @copyright  Copyright (c) NetSuite Inc.
- * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
+ * @license    https://raw.githubusercontent.com/netsuitephp/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
- *
- * generated:  2018-10-07 03:37:44 AM UTC
  */
 
 namespace NetSuite\Classes;
@@ -44,7 +42,9 @@ class DeletedRecordType {
     const couponCode = "couponCode";
     const creditMemo = "creditMemo";
     const currencyRate = "currencyRate";
+    const customPurchase = "customPurchase";
     const customRecord = "customRecord";
+    const customSale = "customSale";
     const customTransaction = "customTransaction";
     const customer = "customer";
     const customerCategory = "customerCategory";
@@ -53,6 +53,7 @@ class DeletedRecordType {
     const customerPayment = "customerPayment";
     const customerRefund = "customerRefund";
     const customerStatus = "customerStatus";
+    const customerSubsidiaryRelationship = "customerSubsidiaryRelationship";
     const deposit = "deposit";
     const depositApplication = "depositApplication";
     const descriptionItem = "descriptionItem";
@@ -92,6 +93,7 @@ class DeletedRecordType {
     const manufacturingCostTemplate = "manufacturingCostTemplate";
     const manufacturingOperationTask = "manufacturingOperationTask";
     const manufacturingRouting = "manufacturingRouting";
+    const merchandiseHierarchyNode = "merchandiseHierarchyNode";
     const nexus = "nexus";
     const nonInventoryPurchaseItem = "nonInventoryPurchaseItem";
     const nonInventoryResaleItem = "nonInventoryResaleItem";
@@ -108,6 +110,7 @@ class DeletedRecordType {
     const paymentItem = "paymentItem";
     const paymentMethod = "paymentMethod";
     const payrollItem = "payrollItem";
+    const periodEndJournal = "periodEndJournal";
     const phoneCall = "phoneCall";
     const priceLevel = "priceLevel";
     const pricingGroup = "pricingGroup";
@@ -142,6 +145,7 @@ class DeletedRecordType {
     const vendorCredit = "vendorCredit";
     const vendorPayment = "vendorPayment";
     const vendorReturnAuthorization = "vendorReturnAuthorization";
+    const vendorSubsidiaryRelationship = "vendorSubsidiaryRelationship";
     const winLossReason = "winLossReason";
     const workOrder = "workOrder";
     const workOrderIssue = "workOrderIssue";
